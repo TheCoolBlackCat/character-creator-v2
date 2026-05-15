@@ -4,10 +4,14 @@
 }
 
 .maxWidthWrapper {
+  /* Elements will follow DOM order for stacking; */
+  /* This is used so the perspectiveBox is stacked properly without z-index; */
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +28,27 @@
 }
 
 .characterWrapper {
+  /* position: fixed;
+  bottom: 0;
+  right: 0;
+  */
+  position: fixed;
+  min-height: 500px;
+  bottom: 5%;
+  top: 15%;
+  left: 50%;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+.perspectiveBox {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(195deg, 20%, 86%);
+  height: 40%;
+  width: 100%;
+  /* z-index: -1; */
 }

@@ -1,2 +1,12 @@
 .buttonRow {
+  text-wrap: nowrap;
+  overflow-x: auto;
+
+  /* Enables scrollling right to the edge of the container */
+  /* The container has padding of 24px so we "remove" it then add it back */
+  /* 22px gives a little buffer at the edges */
+  margin-left: -22px;
+  margin-right: -22px;
+  margin-bottom: -22px;
+  padding: 22px;
 }
